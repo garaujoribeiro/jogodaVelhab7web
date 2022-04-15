@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Jogo da velha</h1>
+
+    <div class="area">
+        <div id="11" class="item b r row1 coluna1 diagonal1"  onclick="marcarElement()"></div>
+        <div id="12" class="item b r row1 coluna2" "  onclick="marcarElement()"></div>
+        <div id="13" class="item b row1 coluna3 diagonal2"  onclick="marcarElement()"></div>
+
+        <div id="21" class="item b r row2 coluna1 "  onclick="marcarElement()"></div>
+        <div id="22" class="item b r row2 coluna2 diagonal1 diagonal2"  onclick="marcarElement()"></div>
+        <div id="23" class="item b row2 coluna3" onclick="marcarElement()"></div>
+
+        <div id="31" class="item r row3 coluna1 diagonal2" onclick="marcarElement()"></div>
+        <div id="32" class="item r row3 coluna2" onclick="marcarElement()"></div>
+        <div id="33" class="item row3 coluna3 diagonal1" onclick="marcarElement()"></div>
+    </div>
+
+    <div class="info">
+        <div class="infoitem">
+            <div class="infotitulo">A vez é:</div>
+            <div id="infocorpo_vez">--</div>
+        </div>
+        <div class="infoitem">
+            <div class="infotitulo">Vencedor:</div>
+            <div id="infocorpo_resultado">--</div>
+        </div>
+    </div>
+
+    <button class="reset" onClick="reset()">Resetar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
